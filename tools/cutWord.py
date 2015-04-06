@@ -4,7 +4,7 @@ __author__ = 'zhaoming'
 def cutWordFromFile(filename):
     import sys
     sys.path.append('..')
-    import baseLib.getCharCode
+    from baseLib.getCharCode import getCharType
     import jieba
     import codecs
     charType=getCharType(filename)
@@ -18,6 +18,6 @@ def cutWordFromFile(filename):
 if __name__=='__main__':
     seg_list=cutWordFromFile('../corpus/test.txt')
     print '/'.join(seg_list)
-
+    print 'end...'
 
 
