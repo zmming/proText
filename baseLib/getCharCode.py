@@ -10,10 +10,9 @@ def getCharType(filename):
             detector.feed(line)
             if detector.done:break
         detector.close()
-    print detector.result
+    return detector.result['encoding']
 
 
-if __name__=='main':
-    #print 'start getCharType'
+if __name__=='__main__':
     print getCharType('../corpus/test.txt')
-    #print 'end getCharType'
+    print 'end...'
