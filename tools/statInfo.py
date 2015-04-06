@@ -11,6 +11,6 @@ def statInfo(lst=[]):
     return data
 
 if __name__=='__main__':
-    #from cutWord import cutWordFromFile
+    from cutWord import cutWordFromFile
     lst=cutWordFromFile('../corpus/test.txt')
     data=statInfo(lst)
