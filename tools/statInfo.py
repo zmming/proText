@@ -19,7 +19,9 @@ if __name__=='__main__':
     lst=cutWordFromFile('../corpus/test.txt')
     from collections import Counter
     data=statInfo(lst)
-    sortLst=sorted(data,reverse=False)
-    print data
+    #sortLst=sorted(data,reverse=False)
+    #print data
     # for item in sortLst:
     #     print item,data[item]
+    for item in data:
+        print item,data[item]
